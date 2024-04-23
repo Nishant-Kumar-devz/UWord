@@ -18,7 +18,7 @@ export const Post = () => {
   }
   return (
     <div>
-      <FullPost post={post} />
+      {post !== null && <FullPost post={post} />}
     </div>
   );
 };
