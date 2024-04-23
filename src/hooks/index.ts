@@ -13,7 +13,7 @@ export interface PostType {
 
 export const usePost = ({ id }: { id: string }) => {
   const [loading, setLoading] = useState(true);
-  const [post, setPost] = useState<PostType>([]);
+  const [post, setPost] = useState<PostType | null>(null);
 
   useEffect(() => {
     axios
